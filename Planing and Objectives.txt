@@ -22,13 +22,12 @@ b)Wireframe. wireFrame.jpg attachted
 
 1-Create html page with corresponding sections
 2-Fonts: 
-3-SetUp Git and make sure add. and commit changes as you made them  
+3-SetUp Git and make sure add. and commit changes as you made them  DONE
 4-Colors: *changes to be made*
 5-Pictures: 
 6-Make the website responsive: 
 7-Check the use of sematic elements and the use of WAI-ARIA properties
-8-Put links and summary of my projects: 
-9-Publish to GitHub
+8-Publish to GitHub
 
 
  
