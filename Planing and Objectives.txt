@@ -1,0 +1,34 @@
+Name of the Project: Colombian Emeralds
+Timeline:
+Start of the project- 14 June 2023 Mid-Day.
+Max time to finish the project- 15 June 2023 evening.
+
+a)Plan the project.
+	"Colombian Emeralds" it will be a website 	giving a     presentation of an emerald 	company.
+	The presentation of the website it will be on 	a single page.
+
+	-First page it will have the introduction part 	of the company with a simple navigation 	bar(fixed). L'MINIERA
+
+	-Second page it will be the page with NUOVI 	ARRIVI.
+
+	The SERVIZIO of the emeralds it will be on the 	-3rd section of the website.
+
+
+	-The last section it will be the CONTACTI page 	with the necessary information/
+
+
+b)Wireframe. wireFrame.jpg attachted
+
+
+1-Create html page with corresponding sections
+2-Fonts: 
+3-SetUp Git and make sure add. and commit changes as you made them  
+4-Colors: *changes to be made*
+5-Pictures: 
+6-Make the website responsive: 
+7-Check the use of sematic elements and the use of WAI-ARIA properties
+8-Put links and summary of my projects: 
+9-Publish to GitHub
+
+
+ 
