@@ -59,10 +59,8 @@ header {
     height: 10vw;
     position: fixed;
     width: 100%;
-    
     z-index: 999;
     background-color: white;
-    border-bottom: 1px solid black;
 
 }
 
@@ -81,12 +79,16 @@ body {
     width: 43%;
     margin: auto;
     display: block;
-   
+    display: flex;
+    justify-content: center;
+    border: 1px solid yellow;
+    align-items: center;
 }
 
 #logo img {
   max-width: 100%;
-  height: auto;
+  height: 60%;
+  border: solid black;
 }
 
 nav ul {
@@ -572,7 +574,7 @@ html {
 
 header {
 
-  height: 10vw;
+  height: 15vw;
   position: fixed;
   width: 100%;
   z-index: 999;
