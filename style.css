@@ -86,14 +86,13 @@ body {
     display: block;
     display: flex;
     justify-content: center;
-    border: 1px solid yellow;
     align-items: center;
 }
 
 #logo img {
   max-width: 100%;
   height: 60%;
-  border: solid black;
+ 
 }
 
 nav ul {
@@ -672,9 +671,10 @@ nav  .icon {
 /* Small devices (phones, 576px and up) */
 @media (max-width: 576px) {
  html {
-    font-size: 13px;
+    font-size: 10px;
     
   }
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
