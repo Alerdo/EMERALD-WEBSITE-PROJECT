@@ -11,19 +11,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+
+        <script src="https://kit.fontawesome.com/be0fd51408.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&family=Whisper&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <a href="#home" id="logo"><img src="logo.png"></a>
-            <nav>
+            <nav class="topNav "id="nav">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#second-section">L'MINIERA</a></li>
-                    <li><a href="#third-section">NUOVI ARRIVI</a></li>
-                    <li><a href="#fourth-section">SERVIZIO</a></li>
-                    <li><a href="#fifth-section">CONTATTI</a></li>
+                    <li><a href="#home" class="hide"> HOME</a></li>
+                    <li><a href="#second-section" class="hide">L'MINIERA</a></li>
+                    <li><a href="#third-section" class="hide">NUOVI ARRIVI</a></li>
+                    <li><a href="#fourth-section" class="hide">SERVIZIO</a></li>
+                    <li><a href="#fifth-section" class="hide">CONTATTI</a></li>
+                    <a class="icon" onclick="toggleNavLinks()"><i class="fa-solid fa-bars"></i></a>   
                 </ul>
             </nav>
+            
         </header>
         <main>
             <section id="home" class="">
@@ -50,7 +58,7 @@
              </div>
 
              <div class="wrapperPhoto">
-                <div>
+                <div id="imageHoldingEmerald">
                     <img src="holding_emerald.png" alt="holding emerald">
                     </div>
                 <div class="sec-info">
@@ -75,7 +83,7 @@
                     <figcaption>Photo Example</figcaption>
                 </figure>
                 <figure>
-                    <img src="emeralds3.png"alt="emerald">
+                    <img src="emeralds2.png"alt="emerald">
                     <figcaption>Photo Example</figcaption>
                 </figure>
                 <figure>
@@ -91,7 +99,9 @@
                 <p>Tutte le nostre pietre sono certificate dall'Agenzia Nazionale di Estrazione Mineraria della Colombia, che garantisce che la loro estrazione avvenga nel rispetto di rigorose tecniche professionali e con un impatto ambientale minimo. Inoltre, adempiamo ai nostri obblighi fiscali e di royalty nei confronti del governo colombiano, contribuendo così allo sviluppo sostenibile del paese</p>
                  <img src="agencia-nacional.png">
              </div>
-             <div><img src="emeraldCertification.png" alt="emeralds"></div>
+             <div class="emeraldServicio">
+              <img src="emeraldCertification.png" alt="emeralds">
+            </div>
              </div>
 
              <div class="wrapper-fourth-section2">
@@ -173,7 +183,7 @@
              </div>
             </section>
         </main>
-        <footer>Alerdo Ballabani </footer>
+        <footer>Website by: Alerdo Ballabani </footer>
         
         <script src="main.js" async defer></script>
     </body>
