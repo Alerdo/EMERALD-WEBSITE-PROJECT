@@ -28,7 +28,27 @@ window.addEventListener('scroll', () => {
         });
     });
 
+
+
+
+
+
+
+
   //Using JavaScript to make the navigation-bar smaller 
+  function toggleNavLinks() {
+    const navLinks = document.querySelector('.topNav ul');
+    navLinks.classList.toggle('show'); // Toggle the show class on click
+  }
+
+   const showNavBar =() => {
+    var x = document.getElementById("nav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 
   /*
   window.addEventListener('scroll',() => {
