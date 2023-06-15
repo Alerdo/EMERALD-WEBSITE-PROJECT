@@ -1,7 +1,7 @@
 
 
 
-//Ssing javascript to change the backgrond of nav links while scrolling down or cliking
+//Using javascript to change the backgrond of nav links while scrolling down or cliking
 
 window.addEventListener('scroll', () => {
       const nav = document.querySelector('nav');
@@ -28,4 +28,25 @@ window.addEventListener('scroll', () => {
         });
     });
 
-  
+  //Using JavaScript to make the navigation-bar smaller 
+
+  /*
+  window.addEventListener('scroll',() => {
+    const logo = document.getElementById('logo');
+    const section = document.getElementById('home')
+    const sectionHeight = section.clientHeight;
+    const header = document.getElementsByTagName('header')[0]; //since this returns a collection I acces the one and the only
+    const nav = document.getElementsByTagName('nav')[0];
+
+
+     
+    if(window.pageYOffset > (sectionHeight /1.1) ) {
+        logo.style.display = 'none';
+        header.style.height = '5vw'
+        nav.style.height = '100%'
+    } else {
+        logo.style.display = 'block'
+        header.style.height = '10vw'
+        nav.style.height = ''
+    }
+  }) */
