@@ -26,12 +26,12 @@ window.addEventListener('scroll', () => {
 
     if (link.getAttribute('href').substring(1) === currentSection) {
       link.style.color = 'white';
-      link.style.backgroundColor = '#2EE59D';
+      link.style.backgroundColor = '#00CC99';
 
       icons[index].style.color = 'white';
     } else {
     
-      
+
       icons[index].style.color = '';
     }
   });

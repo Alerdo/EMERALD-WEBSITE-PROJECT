@@ -99,6 +99,10 @@ h2 {
  
 }
 
+nav {
+  max-width: 80%;
+  margin: auto;
+}
 nav ul {
     display: flex;
     justify-content: space-evenly;
@@ -146,7 +150,7 @@ nav a {
     
   nav a:hover {
     color: #fff;
-    background-color: #2EE59D;
+    background-color: #00CC99;
     box-shadow: 0px 15px 20px rgba(56, 97, 81, 0.4);
     transform: translateY(-2px);
   }
@@ -282,7 +286,7 @@ nav a {
 }
 
 .sec-info p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 
 }
 
