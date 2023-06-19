@@ -161,9 +161,20 @@ nav a {
   }
 
 
+  #home{
+    height: 55vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 6rem;
+ border: 1px solid red;
+}
+
 
 .content {
   background-color: rgba(128, 128, 128, 0.4);
+  border: 1px solid blue;
   height: 20%;
   width: auto;
   position: relative;
@@ -178,9 +189,9 @@ nav a {
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  padding-top: 10px;
-  border: none;
-  top: 10%;
+padding: 2%;
+display: none;
+
 }
 
 .content h1 {
@@ -209,22 +220,7 @@ nav a {
     max-width: 100%;
 }
 
-#home{
-    height: 55vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4vw;
-   
-}
-
-
-
-
-
-
+ 
 /*-----------------EMPTY SPACE -----------------*/
 #empty {
     width: 100%;
