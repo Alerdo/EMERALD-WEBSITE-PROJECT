@@ -167,7 +167,6 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 6rem;
  border: 1px solid red;
 }
 
