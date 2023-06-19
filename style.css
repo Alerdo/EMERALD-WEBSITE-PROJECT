@@ -50,6 +50,7 @@ html {
     box-sizing: border-box;
     max-width: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -65,9 +66,12 @@ header {
 }
 
 body {
-  font-family: 'Reem Kufi Ink', sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
+h2 {
+  font-family:'Orbitron', sans-serif;;
+}
 
 #logo {
   /*
@@ -109,7 +113,6 @@ nav ul li {
 nav a {
     width: 100%;
     height: 2rem;
-    font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -166,11 +169,13 @@ nav a {
 
 .content h1 {
     font-size: 4rem;
-    font-family: 'Reem Kufi Ink', sans-serif;
+    font-family:'Orbitron', sans-serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), 0px 0px 2px rgba(255, 252, 252, 0.6);
+    
 }
 
 .content p {
-    font-size: 6rem;
+    
     font-family: 'Whisper', cursive;
     font-size: 5rem;
     color: #F9F192;
@@ -223,6 +228,7 @@ nav a {
     padding: 0;
     background-color: black;
     
+    
 }
 
 
@@ -234,37 +240,54 @@ nav a {
     align-self: center;
     align-content: center;
     padding-top: 11vw;
-  
     width: 100%;
+    
     
 }
 
 .wrapperVideo video {
-  max-width: 35%;
-  height: auto;
-   height: 400px;
+  max-width: 45%;
+  max-height: 450px;
+  border: 1px solid white;
+
  
 
 }
 
+.wrapperVideo .sec-info , .wrapperPhoto .sec-info{
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+ .sec-info h2 {
+  margin-bottom: 10%;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), 0px 0px 2px rgba(255, 252, 252, 0.6);
+}
+
+.sec-info p {
+  font-size: 1.3rem;
+
+}
+
+.sec-info p:hover {
+text-shadow: 0 14px 28px rgb(255, 246, 246), 0 10px 10px rgba(255, 255, 255, 0.413);
+;  
+}
 .wrapperPhoto {
     padding-top: 5vw;
     padding-bottom: 5vw;
-    width: 80%;
-    margin: auto;
+    max-width: 100%;
 }
 
-.sec-info {
-width: 45%;
-
+.imageHoldingEmerald {
+max-width: 45%;
 display: flex;
-flex-direction: column;
 justify-content: center;
-align-items: center;
-}
-
-.sec-info h2 {
-    margin-bottom: 1rem;
 }
 
 #second-section img {
@@ -293,8 +316,6 @@ height: auto;
     padding-top: 11vw;
     width: 100%;
     height: auto;
-    border: 1px solid blue;
-    
 }
 
 
@@ -308,21 +329,34 @@ justify-content: center;
 align-items: center;
 }
 
-.sec-info h2 {
-    margin-bottom: 1rem;
+.wrapper-third-section .sec-info h2 {
+  margin: 0.5rem;
 }
 
 .section-three-photos {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    align-items: center;
 
 }
 
 .section-three-photos figure{
     margin: 2rem;
     width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+.section-three-photos figure:hover {
+  
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+
+  
+}
+
 
 .section-three-photos img {
 width: 100%;
@@ -341,31 +375,34 @@ height: auto;
 .wrapper-fourth-section {
     padding-top: 11vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     max-width: 100%;
 }
 
-
-.sec-info {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-
+.wrapper-fourth-section .sec-info {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .sec-info img {
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
 }
 .emeraldServicio {
-max-width: 50%;
+max-width: 45%;
 height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
 .emeraldServicio img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -375,30 +412,41 @@ height: auto;
 .wrapper-fourth-section2 {
     display: flex;
     justify-content: space-evenly;
-    margin:3rem;
+    align-items: center;
+    margin-top:8rem;
     max-width: 100%;
   }
   
   .emerald-specification {
-    max-width: 40%;
+    max-width: 45%;
   }
-
+  .emerald-specification h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
 
   .emerald-specification table {
     max-width: 100%;
   }
   
   .wrapp-spec-photo {
-    max-width: 40%;
+    max-width: 35%;
+    height: auto;
     background-color: #333;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .wrapp-spec-photo p {
     text-align: center;
-    color: white
+    color: white;
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5), 0px 0px 1px rgba(255, 252, 252, 0.4);
   }
   
   .spec-photos {
@@ -437,6 +485,7 @@ table {
       width: 100%;
     }
     
+    
     th, td {
       padding: 0.5rem;
       text-align: left;
@@ -461,30 +510,31 @@ table {
   overflow: hidden;
   background-color: black;
   color: white;
+ 
 }
 
 .wrapper-fifth-section {
+  max-width: 100%;
   padding-top: 10vw;
   padding-bottom: 10vw;
-  max-width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .wrapper-fifth-section .sec-info {
-  width: 35%;
+  width: 45%;
   height: 100%;
   height: auto;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper-fifth-section .sec-info h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 
 .wrapper-fifth-section .sec-info ul {
@@ -512,18 +562,21 @@ table {
 
 .barcode {
   width: 35%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
 }
 .barcode img {
   width: 50%;
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 5%;
+
 }
 
-button.email-button {
+.barcode button {
   padding: 1rem;
   background-color:gainsboro;
   border-radius: 5px;
@@ -534,20 +587,16 @@ button.email-button {
   text-decoration: none;
 }
 
-button.email-button .email-link {
-  color: white;
+
+.barcode button:hover {
+  background-color: white;
+  box-shadow: 0px 15px 20px rgba(245, 248, 247, 0.4);
+  transform: translateY(-2px);
+}
+
+.barcode button a {
   text-decoration: none;
 }
-
-button.email-button:hover .email-link {
-  text-decoration: underline;
-}
-
-button.email-button:hover {
-  background-color: white
-}
-
-
 footer {
   background-color: black;
   color: whitesmoke;
@@ -566,88 +615,6 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 390px) {
  
-html {
-  font-size: 10px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-
-header {
-
-  height: 15vw;
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  background-color: white;
-  border-bottom: 1px solid black;
-
-}
-
-body {
-font-family: 'Reem Kufi Ink', sans-serif;
-}
-
-
-#logo {
-/*
-  background-image: url(logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto; */
-  height: 60%;
-  width: 43%;
-  margin: auto;
-  display: block;
- 
-}
-
-#logo  {
-width: 60%;
-height: auto;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav a {
-  width: 7.1rem;
-  height: 2rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.7rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: black;
-  border: none;
-  border-radius: 10%;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  }
-
-  
-nav a:hover {
-  color: #fff;
-  background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(56, 97, 81, 0.4);
-  transform: translateY(-2px);
-}
-
-
-nav  .icon {
-  display: none;
-}
-  
 }
 
 @media (max-width: 575.98px) {
@@ -663,14 +630,31 @@ nav  .icon {
 
 }
 
+
 /* Small devices (phones, 576px and up) */
 @media (max-width: 576px) {
  html {
-    font-size: 10px;
+    font-size: 13px;
     
   }
   header {
-    height: 15vw;
+    height: 24vw;
+  }
+
+
+  
+  header img {
+max-height: 45%;
+  }
+ 
+
+  nav ul li {
+  
+    width: 15%;
+  }  
+  nav a {
+    text-align: center;
+    font-size: 0.8rem;
   }
   .section-three-photos img {
     max-width: 80%;
@@ -683,8 +667,43 @@ nav  .icon {
     flex-direction: column;
 }
 
+#home , .wrapperVideo, .wrapper-third-section, .wrapper-fourth-section, .wrapper-fifth-section {
+  padding-top: 25vw;
+}
+
+.imageHoldingEmerald {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.imageHoldingEmerald img {
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.section-three-photos figure {
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 10%;
+}
 
 
+
+.wrapp-spec-photo{
+  height: 80%;
+}
+
+.wrapper-fourth-section .sec-info p{
+  font-size: 1.2rem;
+}
+.wrapp-spec-photo p {
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.barcode img {
+  width: 80%;
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
