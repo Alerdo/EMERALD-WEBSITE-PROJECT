@@ -270,7 +270,7 @@ nav a {
 }
 
 .sec-info p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
 }
 
@@ -328,7 +328,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-
+.wrapper-third-section .sec-info p {
+  font-size: 1.2rem;
+}
 .wrapper-third-section .sec-info h2 {
   margin: 0.5rem;
 }
@@ -532,9 +534,10 @@ table {
   align-items: center;
 }
 
-.wrapper-fifth-section .sec-info h1 {
+.wrapper-fifth-section .sec-info h2 {
   font-size: 3rem;
   margin-bottom: 5%;
+  
 }
 
 .wrapper-fifth-section .sec-info ul {
@@ -612,23 +615,6 @@ footer {
 
 /*Adding media querys so the website is responsive*/
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 390px) {
- 
-}
-
-@media (max-width: 575.98px) {
-  /* CSS styles for extra small devices go here */
-  html {
-    font-size: 10px;
-    
-  }
-
-  #logo {
-    margin: auto;
-  }
-
-}
 
 
 /* Small devices (phones, 576px and up) */
@@ -656,6 +642,23 @@ max-height: 45%;
     text-align: center;
     font-size: 0.8rem;
   }
+
+  .content h1 {
+    font-size: 2.2rem;
+  }
+  .content p {
+    font-size: 3rem;
+  }
+
+  #empty {
+    display: none;
+  }
+  .wrapper-third-section .sec-info {
+    border: 1px solid red;
+    width: 90%;
+  }
+
+  .section-three-photos .sec-info
   .section-three-photos img {
     max-width: 80%;
     margin: auto;
@@ -694,17 +697,33 @@ max-height: 45%;
 }
 
 .wrapper-fourth-section .sec-info p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .wrapp-spec-photo p {
   font-size: 1.2rem;
   width: 80%;
 }
 
+.wrapper-fifth-section .sec-info {
+  border: 1px solid blue;
+  align-items: flex-start;
+ 
+}
+.wrapper-fifth-section .sec-info h2 {
+border: 1px solid red;
+}
+
+.wrapper-fifth-section .sec-info ul {
+  border: 1px solid red;
+}
 .barcode img {
   width: 80%;
 }
+
 }
+
+
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
