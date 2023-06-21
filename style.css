@@ -262,7 +262,7 @@ nav a {
 .wrapperVideo video {
   max-width: 45%;
   max-height: 450px;
-  border: 1px solid white;
+ 
 
  
 
@@ -295,7 +295,7 @@ nav a {
 
 
 .wrapperPhoto {
-    padding-top: 5vw;
+    padding-top: 7vw;
     padding-bottom: 5vw;
     max-width: 100%;
 
@@ -397,7 +397,9 @@ height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 100%;
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid blue;
 }
 
 .wrapper-fourth-section .sec-info {
@@ -406,6 +408,7 @@ height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 }
 
 .sec-info img {
@@ -422,7 +425,7 @@ align-items: center;
 
 
 .emeraldServicio img {
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
 }
 
@@ -433,8 +436,11 @@ align-items: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top:8rem;
-    max-width: 100%;
+    padding-top: 5rem;
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid blue;
+    text-align: justify;
   }
   
   .emerald-specification {
@@ -536,7 +542,7 @@ table {
 .wrapper-fifth-section {
   max-width: 100%;
   padding-top: 12vw;
-  padding-bottom: 10vw;
+  padding-bottom: 6vw;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -572,7 +578,7 @@ table {
 
 
 .wrapper-fifth-section .sec-info a {
-  color: #0066cc;
+  color: #00997A;
   text-decoration: none;
 }
 
@@ -605,7 +611,7 @@ table {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  border: 1px solid blue;
+  border: 1px solid #00997A;
   text-decoration: none;
 }
 
@@ -618,11 +624,29 @@ table {
 
 .barcode button a {
   text-decoration: none;
+  color: #01a382;
 }
+
+
+
+/*--------------------FOOTER------------------------*/
 footer {
   background-color: black;
   color: whitesmoke;
   text-align: center;
+}
+
+.contact-icons{
+  padding: 0.8rem;
+  text-decoration: none;
+  color: #00997A;
+}
+.contact-icons i {
+  width: 10%;
+  padding: 0.2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #00997A ;
 }
 
 
