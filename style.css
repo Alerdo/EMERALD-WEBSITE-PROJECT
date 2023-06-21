@@ -168,18 +168,17 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    padding-top: 8rem;
 }
 
 
 .content {
   background-color: rgba(128, 128, 128, 0.4);
-  height: 20%;
+  height: auto;
   width: auto;
   position: relative;
   z-index: 2;
   color: white;
-  font-size: 2rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -187,9 +186,8 @@ nav a {
   align-self: center;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
   padding: 2%;
-  display: none;
+  top: 10%;
 
 }
 
@@ -203,8 +201,9 @@ nav a {
 .content p {
     
     font-family: 'Whisper', cursive;
-    font-size: 5rem;
+    font-size: 6rem;
     color: #F9F192;
+    
     /* 50% transparent gray */
 }
 
@@ -744,13 +743,7 @@ header ul {
   align-items: flex-start;
  
 }
-.wrapper-fifth-section .sec-info h2 {
 
-}
-
-.wrapper-fifth-section .sec-info ul {
-
-}
 .barcode img {
   width: 80%;
 }
