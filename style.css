@@ -399,7 +399,6 @@ height: auto;
     align-items: center;
     max-width: 80%;
     margin: auto;
-    border: 1px solid blue;
 }
 
 .wrapper-fourth-section .sec-info {
@@ -439,7 +438,6 @@ align-items: center;
     padding-top: 5rem;
     max-width: 80%;
     margin: auto;
-    border: 1px solid blue;
     text-align: justify;
   }
   
