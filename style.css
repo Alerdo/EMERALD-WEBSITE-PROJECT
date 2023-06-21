@@ -168,7 +168,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 8rem;
+    padding-top: 4rem;
 }
 
 
@@ -187,7 +187,8 @@ nav a {
   flex-direction: column;
   justify-content: center;
   padding: 2%;
-  top: 10%;
+  top: 15%;
+  display: none;
 
 }
 
@@ -215,7 +216,8 @@ nav a {
     width: 100%;
     object-fit: cover;
     z-index: -1;
-    max-width: 100%;
+    max-width: 75%;
+    margin-bottom: 6rem;
 }
 
  
