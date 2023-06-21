@@ -611,6 +611,7 @@ table {
   cursor: pointer;
   border: 1px solid #00997A;
   text-decoration: none;
+  
 }
 
 
@@ -620,10 +621,14 @@ table {
   transform: translateY(-2px);
 }
 
+
+
 .barcode button a {
   text-decoration: none;
   color: #01a382;
+  
 }
+
 
 
 
@@ -632,12 +637,21 @@ footer {
   background-color: black;
   color: whitesmoke;
   text-align: center;
+  font-family: Helvetica, sans-serif;
+   text-transform: uppercase;
+   font-style: italic;
+   font-size: 0.9rem;
 }
+
 
 .contact-icons{
   padding: 0.8rem;
+ 
+}
+
+.contact-icons a{
+  color: #00997A ;
   text-decoration: none;
-  color: #00997A;
 }
 .contact-icons i {
   width: 10%;
@@ -645,6 +659,7 @@ footer {
   font-size: 2rem;
   text-decoration: none;
   color: #00997A ;
+  
 }
 
 
