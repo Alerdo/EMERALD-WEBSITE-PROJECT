@@ -239,8 +239,8 @@ nav a {
     
     height: 100%;
     padding: 0;
-    background-color: black;
     
+    padding-top: 11rem;
     
 }
 
@@ -252,8 +252,8 @@ nav a {
     justify-content: space-evenly;
     align-self: center;
     align-content: center;
-    padding-top: 11vw;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     
     
 }
