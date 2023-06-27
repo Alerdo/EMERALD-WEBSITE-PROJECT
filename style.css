@@ -867,7 +867,7 @@ font-weight: 300;
 
 
 .wrapper-fifth-section   .green-text {
-    color: green;
+    color: #00997A;
 }
 
 
@@ -980,7 +980,7 @@ header ul {
 }
   nav ul li {
   
-    width: 18%;
+    width: 19%;
   }  
   
   nav a {
@@ -1025,7 +1025,7 @@ section {
     justify-content: center;
     align-items: center;
     padding-top: 0;
-    min-height: 100vw 
+    min-height: 80vw ;
   }
   
   #home video {
@@ -1048,12 +1048,10 @@ section {
 
 
   #empty {
-    height: auto;
+    height: 40vw;
   }
 
-  #empty p {
-    font-size: 2rem
-  }
+ 
   
 
 
@@ -1062,7 +1060,7 @@ section {
 
     .wrapperVideo video {
       max-width: 80%;
-      max-height: 450px;
+      height: auto;
     
     }
     
