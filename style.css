@@ -302,13 +302,14 @@ nav a {
 }
 
 .wrapperVideo video {
-  max-width: 45%;
-  max-height: 450px;
+  max-width: 25%;
+  height: auto;
  
 
  
 
 }
+
 
 .wrapperVideo .sec-info , .wrapperPhoto .sec-info{
   max-width: 45%;
@@ -1024,7 +1025,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0;
+    padding: 0;
     min-height: 80vw ;
   }
   
@@ -1032,6 +1033,7 @@ section {
     max-width: 100%;
     margin-bottom: 0;
     padding-bottom: 0;
+    
   }
   .content h1 {
     font-size: 2.2rem;
@@ -1052,8 +1054,6 @@ section {
   }
 
  
-  
-
 
  
   
