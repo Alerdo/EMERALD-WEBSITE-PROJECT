@@ -223,14 +223,25 @@ nav a {
 
  
 /*-----------------EMPTY SPACE -----------------*/
-#empty {
-    width: 100%;
-    height: 20vw;
-    background-color: white;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
 
+
+#empty {
+  display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vw;
+    border: 1px solid rgb(218, 29, 29);
+    background-image: -moz-element(white);
+    background-attachment: fixed;
+    background-color: #f2f2f2; /* Set a background color for the text */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000; /* Set the text color */
+    text-align: center; /* Center the text horizontally */
+    padding: 20px; /* Add some padding around the text */
+    
     /*
     background-attachment: fixed;
     background-image: url('background1.png');
@@ -295,6 +306,10 @@ nav a {
   font-size: 1.3rem;
   }
 
+.break-sm {
+  display: none;
+}
+
  .sec-info h2 {
   margin-bottom: 10%;
   font-size: 2rem;
@@ -317,7 +332,9 @@ nav a {
     max-width: 100%;
 
 }
-
+.mobilePhoto {
+  display: none;
+}
 .imageHoldingEmerald {
 max-width: 45%;
 display: flex;
@@ -595,6 +612,25 @@ align-items: center;
       right: 0;
     }
 
+    .product-container .product .productInfo h3 {
+      /* Styles for h3 within .productInfo */
+      color: #333333;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .product-container .product .productInfo p:nth-of-type(1) {
+      /* Styles for the first <p> tag within .productInfo */
+      color: #666666;
+      font-size: 16px;
+    }
+    
+    .product-container .product .productInfo p:nth-of-type(2) {
+      /* Styles for the second <p> tag within .productInfo */
+    
+      font-size: 18px;
+     
+    }
 
 /*-----------------FOURTH SECTION -----------------*/
 
@@ -779,45 +815,43 @@ table {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .wrapper-fifth-section .sec-info {
   width: 45%;
   height: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ border: 1px solid red;
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.wrapper-fifth-section .sec-info h2 {
-  font-size: 3rem;
-  margin-bottom: 5%;
-  text-shadow: none;
+  margin-left: 10%;
   
 }
 
-.wrapper-fifth-section .sec-info ul {
-  list-style: none;
-  text-align: left;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+
+       
+        
+.wrapper-fifth-section h3 {
+font-size: 3rem;
+margin-bottom: 0.7rem;
+}       
+       
+
+.wrapper-fifth-section p {
+font-size: 1.7rem;
+margin-bottom: 0.2rem;
+font-weight: 300;
+}      
+
+
+.wrapper-fifth-section   .sec-info i {
+    margin-right: 5px;
 }
 
-.wrapper-fifth-section .sec-info li {
-  margin-bottom: 5px;
-}
 
 
-.wrapper-fifth-section .sec-info a {
-  color: #00997A;
-  text-decoration: none;
-}
-
-.wrapper-fifth-section .sec-info a:hover {
-  text-decoration: underline;
+.wrapper-fifth-section   .green-text {
+    color: green;
 }
 
 
@@ -910,7 +944,7 @@ footer {
 
 
 /* Small devices (phones, 576px and up) */
-@media (max-width: 576px) {
+@media (max-width: 676px) {
  html {
     font-size: 13px;
     
@@ -930,7 +964,7 @@ header ul {
 }
   nav ul li {
   
-    width: 17%;
+    width: 18%;
   }  
   
   nav a {
@@ -956,28 +990,26 @@ header ul {
     font-size: 0.8rem;
     }
 
-    nav a:hover {
-      color: #000000;
-      background-color: white;
-      box-shadow: 0px 15px 20px rgba(56, 97, 81, 0.4);
-      transform: none;
-    }
-    .topNav ul li a i:hover {
-      display: none;
-    }
+  
+   
+   
     
     
 
 
 section {
-  min-height: 100vw ;
+  min-height: 130vw ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
   #home {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 0;
-    
+    min-height: 100vw 
   }
   
   #home video {
@@ -995,7 +1027,7 @@ section {
   .wrapperVideo , .wrapperPhoto {
    flex-direction: column;
     align-items: center;
-       
+    width: 90%;
 }
 
 
@@ -1024,8 +1056,13 @@ section {
       margin: 1rem;
      
       }
+
+      .break-sm {
+        display: block;
+      }
     
      .sec-info h2 {
+      text-align: center;
       margin-bottom: 10%;
       font-size: 2rem;
       text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), 0px 0px 2px rgba(255, 252, 252, 0.6);
@@ -1048,6 +1085,17 @@ section {
     
     }
     
+    .pcPhoto {
+      display: none;
+    }
+
+  .mobilePhoto {
+    display: block;
+    margin: 0.5rem;
+  }
+
+
+
     .imageHoldingEmerald {
      width: 90%;
     display: flex;
@@ -1096,9 +1144,27 @@ section {
 }
 
 
+.product {
+  width: 19rem;
+  max-height: 22rem;
+
+
+}
+
 
 .wrapp-spec-photo{
   height: 80%;
+}
+.wrapper-fourth-section{
+  flex-direction: column;
+}
+
+.wrapper-fourth-section .sec-info {
+ max-width: 90%;
+}
+
+.wrapper-fourth-section .emeraldServicio {
+display: none;
 }
 
 .wrapper-fourth-section .sec-info p{
