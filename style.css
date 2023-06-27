@@ -127,6 +127,7 @@ nav ul li {
 .topNav ul li a:hover i {
   color: white; 
 }
+
 nav a {
     width: 100%;
     height: 2rem;
@@ -168,7 +169,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 4rem;
+  
 }
 
 
@@ -212,24 +213,40 @@ nav a {
 .video-background {
     margin: 0;
     padding: 0;
-    position: absolute;
+    
     width: 100%;
     object-fit: cover;
-    z-index: -1;
     max-width: 75%;
     margin-bottom: 6rem;
 }
+
 
  
 /*-----------------EMPTY SPACE -----------------*/
 #empty {
     width: 100%;
     height: 20vw;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+
+    /*
     background-attachment: fixed;
     background-image: url('background1.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+}
+
+#empty p {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 2.6rem;
+
 }
 
 /*-----------------SECOND SECTION -----------------*/
@@ -329,7 +346,7 @@ height: auto;
 .wrapper-third-section {
    
     color: black;
-    padding-top: 11vw;
+    padding-top: 10vw;
     width: 100%;
     height: auto;
 }
@@ -345,7 +362,7 @@ justify-content: center;
 align-items: center;
 }
 .wrapper-third-section .sec-info p {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .wrapper-third-section .sec-info h2 {
   margin: 0.5rem;
@@ -369,20 +386,214 @@ align-items: center;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.section-three-photos figure:hover {
-  
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
 
-  
+
+
+/*---------------Third test -----------------------*/
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
 }
 
+.slick-list
+{
+    position: relative;
 
-.section-three-photos img {
-width: 100%;
-height: auto;
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
 }
 
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+    /****************/
+    .gallery {
+      width: 100%;
+      height: 330px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+     
+    }
+  
+    .product-container {
+      max-height: 100%;
+      padding: 0 10px;
+      position: relative;
+      transition: transform 0.3s;
+      will-change: transform;
+      padding: 1rem;
+    }
+  
+    .product {
+      width: 18rem;
+      max-height: 18rem;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+       transition: box-shadow 0.3s ease-in-out;
+
+    }
+
+    .product .productInfo {
+      margin: 5px;
+    
+    }
+    .product img {
+     width: 80%;
+     max-height: 70%;
+     margin-top: 1rem;
+      overflow: hidden;
+
+    }
+  
+    /* Updated: Zoom only the horizontally centered product */
+    .slick-slide:not(.slick-center) .product {
+      transform: scale(0.9);
+    }
+  
+    .slick-slide:not(.slick-center) .product img {
+      opacity: 0.7; /* Adjust the opacity of non-centered products if desired */
+    }
+  
+    .product.slick-center {
+      transform: scale(1.1);
+      z-index: 1;
+    }
+  
+    
+  
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1;
+    }
+  
+    .slick-prev {
+      left: 0;
+    }
+  
+    .slick-next {
+      right: 0;
+    }
 
 
 /*-----------------FOURTH SECTION -----------------*/
@@ -408,7 +619,14 @@ height: auto;
   align-items: center;
   justify-content: center;
   text-align: justify;
+  font-size: 1.2rem;
 }
+.wrapper-fourth-section .sec-info p br {
+  display: block;
+  content: "";
+  margin-top: 10px; /* Add vertical margin between sentences */
+}
+
 
 .sec-info img {
   max-width: 80%;
@@ -429,8 +647,24 @@ align-items: center;
 }
 
 
+.logoColombia {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.logoColombia .same {
+  width: 13%;
+  height: 80px;
+  
+}
 
+.grow {
+  width: 20% ;
+  height: 65px;
+}
 .wrapper-fourth-section2 {
     display: flex;
     justify-content: space-evenly;
@@ -555,6 +789,7 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .wrapper-fifth-section .sec-info h2 {
@@ -697,11 +932,59 @@ header ul {
   
     width: 17%;
   }  
+  
   nav a {
+    width: 100%;
+    height: 2rem;
+    font-size: 0.7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: black;
+    border: none;
+    border-radius: 10%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     text-align: center;
     font-size: 0.8rem;
-  }
+    }
 
+    nav a:hover {
+      color: #000000;
+      background-color: white;
+      box-shadow: 0px 15px 20px rgba(56, 97, 81, 0.4);
+      transform: none;
+    }
+    .topNav ul li a i:hover {
+      display: none;
+    }
+    
+    
+
+
+section {
+  min-height: 100vw ;
+}
+  #home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    
+  }
+  
+  #home video {
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .content h1 {
     font-size: 2.2rem;
   }
@@ -709,23 +992,70 @@ header ul {
     font-size: 3rem;
   }
 
+  .wrapperVideo , .wrapperPhoto {
+   flex-direction: column;
+    align-items: center;
+       
+}
+
+
   #empty {
-    display: none;
+    height: auto;
   }
 
-  .wrapperVideo video {
-    height: auto;
+  #empty p {
+    font-size: 2rem
   }
   
 
+
  
-  #second-section img {
-   width: 100%;
-    height: 100%;
-   
+  
+
+    .wrapperVideo video {
+      max-width: 80%;
+      max-height: 450px;
     
     }
-
+    
+    .wrapperVideo .sec-info , .wrapperPhoto .sec-info{
+      max-width: 80%;
+      display: flex;
+      margin: 1rem;
+     
+      }
+    
+     .sec-info h2 {
+      margin-bottom: 10%;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), 0px 0px 2px rgba(255, 252, 252, 0.6);
+    }
+    
+    .sec-info p {
+      font-size: 1.3rem;
+    
+    }
+    
+    .sec-info p:hover {
+      text-shadow: 0 1px 2px rgba(232, 229, 229, 0.6);
+    }
+    
+    
+    .wrapperPhoto {
+        padding-top: 7vw;
+        padding-bottom: 5vw;
+        max-width: 100%;
+    
+    }
+    
+    .imageHoldingEmerald {
+     width: 90%;
+    display: flex;
+    justify-content: center;
+   
+    }
+    
+    
 
   .wrapper-third-section .sec-info {
   
@@ -772,7 +1102,7 @@ header ul {
 }
 
 .wrapper-fourth-section .sec-info p{
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .wrapp-spec-photo p {
   font-size: 1.2rem;

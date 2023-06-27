@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400;500;600&family=Orbitron:wght@400;500;600&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
      
 </head>
 <body>
@@ -39,19 +42,23 @@
     
     <main>
         <section id="home" class="">
-            <video class="video-background" src="video1.mp4"  preload="auto" autoplay loop muted></video>
+            <video class="video-background" src="video2.mp4"  preload="auto" autoplay loop muted></video>
             <div class="content">
                 <h1>SMERLADI COLOMBIANI</h1>
                 <p>Lusso E Prestigio</p>
             </div>
         </section>
-        <div id="empty"></div>
+        <div id="empty">
+            <p>"Solo lo Smeraldo Colombiano crea un collegamento speciale tra la tierra e la sua antica storia.
+                <br>
+                Offriamo ai nostri Clienti la Garanzia di Smeraldi 
+                di Alta Quialità e Autenticità."</p>
+        </div>
         <section id="second-section" class="">
             <div class="wrapperVideo">
                 <div class="sec-info">
                     <h2>Miniera MAGIA VERDE</h2>
-                    <p>La miniera "Magia verde", situata a Ubala, nell'area di Chivor, in Colombia, è la casa di una delle fonti più affascinanti di smeraldi al mondo. Queste gemme si distinguono per la loro qualità eccezionale e il loro inconfondibile colore vivido e vibrante.L'estrazione degli smeraldi è un viaggio di speranza e emozione.
-                    </p>
+                    <p>La miniera "Magia verde", situata a Ubala, nell'area di Chivor, in Colombia, è la casa di una delle fonti più affascinanti di smeraldi al mondo.<br> Queste gemme si distinguono per la loro qualità eccezionale e il loro inconfondibile colore vivido e vibrante.
                 </div>
 
                 <video autoplay muted loop>
@@ -66,7 +73,7 @@
                 </div>
                 <div class="sec-info">
                     <h2>Miniera MAGIA VERDE</h2>
-                    <p>Gli smeraldi colombiani risvegliano emozioni profonde in coloro che li contemplano, trasmettendo un senso di lusso e raffinatezza. Ogni smeraldo colombiano racchiude in sé l'essenza stessa della natura nel suo massimo splendore.
+                    <p>La qualità dei nostri smeraldi è unica grazie alla loro purezza e chiarezza cristallina, essendo il risultato di un meticoloso processo geologico. Vengono estratti e levigati con cura per valorizzare la loro bellezza naturale, permettendo di ammirare ogni dettaglio del loro splendido colore brillante e radioso.
                     </p>
                 </div>  
             </div>
@@ -76,36 +83,133 @@
             <div class="wrapper-third-section">
                 <div class="sec-info">
                     <h2>NUOVI ARRIVI</h2>
-                    <p>La miniera "Magia verde", situata a Ubala, nell'area di Chivor, in Colombia, è la casa di una delle fonti più affascinanti di smeraldi al mondo. Queste gemme si distinguono per la loro qualità eccezionale e il loro inconfondibile colore vivido e vibrante. 
+                    <p>Immergiti nel nostro mondo di emozioni e scopri l'esquisita collezione di smeraldi vivaci. In ogni pietra preziosa troverai una storia affascinante che va oltre il tempo e risveglia profonde sensazioni.
                     </p>
-                </div>
 
-                <div class="section-three-photos">
-                    <figure>
-                        <img src="emeralds2.png" alt="emerald">
-                        <figcaption>Photo Example</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="emeralds2.png" alt="emerald">
-                        <figcaption>Photo Example</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="photo3.jpg" alt="emerald">
-                        <figcaption>Photo Example</figcaption>
-                    </figure>
-                </div>
-            </div>
+                    <div class="gallery">
+                        <div class="product-container">
+                          <div class="product">
+                            <img src="emerald_1_5923001.jpg" alt="Product 1">
+                            <div class="productInfo">
+                            <h3>Product 1</h3>
+                            <p>Description of Product 1</p>
+                            <p>$19.99</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-container">
+                          <div class="product">
+                            <img src="emerald_2_5923002.jpeg" alt="Product 2">
+                            <div class="productInfo">
+                                <h3>Product 2</h3>
+                                <p>Description of Product 1</p>
+                                <p>$19.99</p>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="product-container">
+                          <div class="product">
+                            <img src="emerald_3_5923003.jpg" alt="Product 3">
+                            <div class="productInfo">
+                                <h3>Product 3</h3>
+                                <p>Description of Product 1</p>
+                                <p>$19.99</p>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="product-container">
+                            <div class="product">
+                              <img src="4_59323004.jpeg" alt="Product 3">
+                              <div class="productInfo">
+                                <h3>Product 4</h3>
+                                <p>Description of Product 1</p>
+                                <p>$19.99</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="product-container">
+                            <div class="product">
+                              <img src="5_5923005.jpeg" alt="Product 3">
+                              <div class="productInfo">
+                                <h3>Product 5</h3>
+                                <p>Description of Product 1</p>
+                                <p>$19.99</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="product-container">
+                            <div class="product">
+                              <img src="6_5923006.jpeg" alt="Product 3">
+                              <div class="productInfo">
+                                <h3>Product 6</h3>
+                                <p>Description of Product 1</p>
+                                <p>$19.99</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="product-container">
+                            <div class="product">
+                              <img src="7_5923007.jpeg" alt="Product 3">
+                              <div class="productInfo">
+                                <h3>Product 7</h3>
+                                <p>Description of Product 1</p>
+                                <p>$19.99</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="product-container">
+                            <div class="product">
+                              <img src="9_5923009.jpeg" alt="Product 3">
+                              <div class="productInfo">
+                                <h3>Product 8</h3>
+                                <p>Description of Product 1</p>
+                                <p>$19.99</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="product-container">
+                            <div class="product">
+                              <img src="10_5923010.jpeg" alt="Product 3">
+                              <div class="productInfo">
+                                <h3>Product 9</h3>
+                                <p>Description of Product 1</p>
+                                <p>$19.99</p>
+                                </div>
+                            </div>
+                          </div>
+                    
+                    
+                    
+                        <!-- Add more product-container divs here -->
+                      </div>
+               
+        
+        
+                
         </section>
+        
+
+
         <section id="fourth-section" class="">
             <div class="wrapper-fourth-section">
                 <div class="sec-info">
                     <h2>Servizio</h2>
-                    <p>Tutte le nostre pietre sono certificate dall'Agenzia Nazionale di Estrazione Mineraria della Colombia, che garantisce che la loro estrazione avvenga nel rispetto di rigorose tecniche professionali e con un impatto ambientale minimo. Inoltre, adempiamo ai nostri obblighi fiscali e di royalty nei confronti del governo colombiano, contribuendo così allo sviluppo sostenibile del paese</p>
-                    <img src="agencia-nacional.png" alt="National Agency Logo">
+                    <p>Smeraldi colombiani naturali tagliati di alta qualità. <br>
+                        Smeraldi colombiani calibrati.<br>
+                        Smeraldi colombiani tagliati e rifiniti.<br>
+                        Certificazioni Gemmologo: Dott. Geol Angela Forlani, GIA, Certificazione Svizzera SSEF.<br>
+                        Offriamo una tecnica per la tracciabilità degli smeraldi colombiani, che copre l'intero percorso dalla scoperta al taglio finale. <br>
+                        Smeraldi Colombiani estratti che soddisfano i requisiti locali, fiscali ed ambientali.</p>
+                    
                 </div>
                 <div class="emeraldServicio">
                     <img src="emeraldCertification.jpg" alt="emeralds">
                 </div>
+            </div>
+            <div class="logoColombia">
+                <img class="grow" src="agencia-nacional.png" alt="National Agency Logo">
+                <img class="same"  src="SSEF LOGO.jpg" alt="National Agency Logo">
+                <img class="grow"  src="GIA_Logo.png" alt="National Agency Logo">
             </div>
 
             <div class="wrapper-fourth-section2">

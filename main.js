@@ -58,6 +58,34 @@ window.addEventListener('scroll', () => {
     }
   }
 
+
+   // JavaScript for initializing the Slick Carousel
+   $(document).ready(function(){
+    $('.gallery').slick({
+      arrows: true,
+      prevArrow: '<div class="slick-prev">◄</div>',
+      nextArrow: '<div class="slick-next">►</div>',
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+  });
+
   /*
   window.addEventListener('scroll',() => {
     const logo = document.getElementById('logo');
