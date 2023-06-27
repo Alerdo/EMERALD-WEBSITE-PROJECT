@@ -169,6 +169,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 0;
   
 }
 
@@ -225,6 +226,18 @@ nav a {
 /*-----------------EMPTY SPACE -----------------*/
 
 
+
+
+#empty {
+  height: 20vw;
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url('background2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+/*
 #empty {
   display: none;
     position: fixed;
@@ -235,12 +248,12 @@ nav a {
     background-image: -moz-element(white);
     background-attachment: fixed;
     background-color: #f2f2f2; /* Set a background color for the text */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   /* background-position: center;
+   /* background-repeat: no-repeat;
+   /* background-size: cover;
     color: #000000; /* Set the text color */
-    text-align: center; /* Center the text horizontally */
-    padding: 20px; /* Add some padding around the text */
+    /*text-align: center; /* Center the text horizontally */
+   /* padding: 20px; /* Add some padding around the text */
     
     /*
     background-attachment: fixed;
@@ -248,8 +261,9 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-}
 
+
+/*
 #empty p {
     width: 80%;
     height: auto;
@@ -258,7 +272,7 @@ nav a {
     font-style: italic;
     font-size: 2.6rem;
 
-}
+} */
 
 /*-----------------SECOND SECTION -----------------*/
 
@@ -834,13 +848,13 @@ table {
        
         
 .wrapper-fifth-section h3 {
-font-size: 3rem;
+font-size: 1.8rem;
 margin-bottom: 0.7rem;
 }       
        
 
 .wrapper-fifth-section p {
-font-size: 1.7rem;
+font-size: 1.3rem;
 margin-bottom: 0.2rem;
 font-weight: 300;
 }      
