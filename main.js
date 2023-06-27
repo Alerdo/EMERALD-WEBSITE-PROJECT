@@ -17,17 +17,24 @@ window.addEventListener('scroll', () => {
     }
   });
 
+  let icons = document.querySelectorAll("i");
   let links = document.querySelectorAll('nav a');
 
-  links.forEach((link) => {
+  links.forEach((link, index) => {
     link.style.color = '';
     link.style.backgroundColor = '';
-  
+
     if (link.getAttribute('href').substring(1) === currentSection) {
       link.style.backgroundColor = '#00997A';
+      icons[index].style.color = 'white';
       link.style.color = 'white';
+    } else {
+    
+
+      icons[index].style.color = '';
     }
-  })});
+  });
+});
 
 
 

@@ -752,6 +752,7 @@ align-items: center;
   }
   
   .spec-photos img {
+    margin-top: 1rem;
     max-width: 50%; /* Adjust as needed */
     height: auto;
   }
@@ -822,7 +823,6 @@ table {
   width: 45%;
   height: 100%;
   height: auto;
- border: 1px solid red;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-left: 10%;
   
