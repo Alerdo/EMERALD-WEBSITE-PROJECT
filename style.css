@@ -237,6 +237,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover; 
 }
+
 /*
 #empty {
   display: none;
@@ -1082,10 +1083,10 @@ section {
 }
 
 
-  /* #empty {
-   
-    
-  } */
+  #empty {
+    height: 40vw;
+    background-attachment: scroll;
+  }
 
  
 #extra-photos {
