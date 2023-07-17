@@ -317,13 +317,16 @@ nav a {
 #second-section{
     
     height: 100%;
-    padding: 0;
+    padding-top: 4rem;
     
     
     
 }
 
 
+.wrapperVideo {
+  padding-top: 11rem;
+}
 .wrapperVideo , .wrapperPhoto {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
