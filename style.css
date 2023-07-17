@@ -712,6 +712,14 @@ align-items: center;
   text-align: justify;
   font-size: 1.2rem;
 }
+
+.wrapper-fourth-section .sec-info ul  {
+  list-style-type: circle;
+}
+
+.wrapper-fourth-section .sec-info ul li {
+  margin-bottom: 5px;
+}
 .wrapper-fourth-section .sec-info p br {
   display: block;
   content: "";
