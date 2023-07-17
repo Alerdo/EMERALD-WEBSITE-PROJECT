@@ -1090,7 +1090,7 @@ section {
  
   #empty {
     height: 40vw;
-  
+    background-attachment: scroll;
    
   }
 
