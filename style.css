@@ -312,38 +312,6 @@ nav a {
   width: 100%;
 }
 
-/* #extra-photos {
-  display: flex;
-  max-width: 90%;
-  justify-content: space-around;
-  margin: 4rem auto;
-
-}
-#extra-photos figure {
-  width: 30%;
-  height: auto;
-   
-  background-color: white; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#extra-photos figcaption {
-  height: 55px;
-  text-align: center;
-  font-size: 1.13rem;
-  padding: 4px 0px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic ;
-  margin-bottom: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-#extra-photos figure img {
-  height: 350px;
-  width: 100%;
-} */
 
 
 #second-section{
