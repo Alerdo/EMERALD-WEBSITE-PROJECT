@@ -278,6 +278,42 @@ nav a {
 /*-----------------SECOND SECTION -----------------*/
 #extra-photos {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 85%;
+  margin: 4rem auto;
+}
+
+#extra-photos .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#captions {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 4px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic ;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  width: 30%;
+  height: auto;
+  background-color: white; 
+  
+}
+
+.image-container img {
+  height: 350px;
+  width: 100%;
+}
+
+/* #extra-photos {
+  display: flex;
   max-width: 90%;
   justify-content: space-around;
   margin: 4rem auto;
@@ -286,7 +322,7 @@ nav a {
 #extra-photos figure {
   width: 30%;
   height: auto;
-   /* Adjust the shadow values as needed */
+   
   background-color: white; 
   display: flex;
   flex-direction: column;
@@ -307,7 +343,7 @@ nav a {
 #extra-photos figure img {
   height: 350px;
   width: 100%;
-}
+} */
 
 
 #second-section{
@@ -1083,9 +1119,11 @@ section {
 }
 
 
+ 
   #empty {
-    
-   height: 50vw;
+    height: 40vw;
+  
+   
   }
 
  
@@ -1096,18 +1134,22 @@ section {
  
 }
  
+#extra-photos .images {
+  flex-direction: column;
+}
   
 #extra-photos figure {
  
-  width: 80%;
+  width: 90%;
   
 } 
 
 
+  
     .wrapperVideo video {
       max-width: 80%;
       height: auto;
-    
+     
     }
     
     .wrapperVideo .sec-info , .wrapperPhoto .sec-info{
