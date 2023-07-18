@@ -169,7 +169,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 0;
+
   
 }
 
@@ -212,7 +212,7 @@ nav a {
 
 
 .video-background {
-    margin: 0;
+   
     padding: 0;
     
     width: 100%;
@@ -232,48 +232,12 @@ nav a {
   height: 20vw;
   width: 100%;
   background-attachment: fixed;
-  background-image: url('ubala_backgrounc.jpg');
+  background-image: url('photos/ubala_backgrounc.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
 }
 
-/*
-#empty {
-  display: none;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100vw;
-    border: 1px solid rgb(218, 29, 29);
-    background-image: -moz-element(white);
-    background-attachment: fixed;
-    background-color: #f2f2f2; /* Set a background color for the text */
-   /* background-position: center;
-   /* background-repeat: no-repeat;
-   /* background-size: cover;
-    color: #000000; /* Set the text color */
-    /*text-align: center; /* Center the text horizontally */
-   /* padding: 20px; /* Add some padding around the text */
-    
-    /*
-    background-attachment: fixed;
-    background-image: url('background1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-
-
-/*
-#empty p {
-    width: 80%;
-    height: auto;
-    margin: auto;
-    text-align: center;
-    font-style: italic;
-    font-size: 2.6rem;
-
-} */
 
 /*-----------------SECOND SECTION -----------------*/
 #extra-photos {
