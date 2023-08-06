@@ -21,20 +21,19 @@ window.addEventListener('scroll', () => {
   let links = document.querySelectorAll('nav a');
 
   links.forEach((link, index) => {
+    // Reset all styles to default first
     link.style.color = '';
     link.style.backgroundColor = '';
+    icons[index].style.color = '';
 
     if (link.getAttribute('href').substring(1) === currentSection) {
       link.style.backgroundColor = '#00997A';
       icons[index].style.color = 'white';
       link.style.color = 'white';
-    } else {
-    
-
-      icons[index].style.color = '';
     }
   });
 });
+
 
 
 

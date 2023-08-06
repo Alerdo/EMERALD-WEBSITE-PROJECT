@@ -974,7 +974,7 @@ footer {
 
 
 /* Small devices (phones, 576px and up) */
-@media (max-width: 676px) {
+@media (max-width: 700px) {
  html {
     font-size: 13px;
     
@@ -1087,6 +1087,10 @@ section {
   
 } 
 
+.image-container img {
+  height: auto;
+  width: 100%;
+}
 
   
     .wrapperVideo video {
@@ -1219,6 +1223,22 @@ display: none;
   font-size: 1.2rem;
   width: 80%;
 }
+
+.logoColombia {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.logoColombia .same {
+  width: 13%;
+  height: auto;
+  
+}
+
+.grow {
+  width: 20% ;
+  height: auto;
+}
+
 
 .wrapper-fifth-section .sec-info {
   
