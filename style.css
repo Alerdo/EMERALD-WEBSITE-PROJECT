@@ -850,11 +850,11 @@ table {
 }
 
 .wrapper-fifth-section .sec-info {
-  width: 45%;
+  /* width: 45%; */
   height: 100%;
   height: auto;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: 10%;
+  margin-left: 10%
   
 }
 
@@ -941,6 +941,7 @@ footer {
    text-transform: uppercase;
    font-style: italic;
    font-size: 0.9rem;
+   padding-bottom: 20px;
 }
 
 
@@ -1254,17 +1255,3 @@ display: none;
 
 
 
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
- 
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
- 
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
