@@ -214,7 +214,7 @@ align-items: center;
 position: relative;
 top: 43%;
 /* height: 100vh; */
-z-index: 9999;
+z-index: 998;
 width: 75%;
 margin: auto;
 }
