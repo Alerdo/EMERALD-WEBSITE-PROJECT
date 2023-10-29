@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/be0fd51408.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +22,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400;500;600&family=Orbitron:wght@400;500;600&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
         <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
@@ -32,6 +37,7 @@
 <body>
     <header>
         <a href="#home" id="logo" alt="logo"><img src="photos/logo.png"></a>
+      
         <nav class="topNav" id="nav">
             <ul>
                 <li><a href="#home" class="hide"><i class="fas fa-home"></i> HOME</a></li>
@@ -40,22 +46,41 @@
                 <li><a href="#fourth-section" class="hide"><i class="fas fa-file-alt"></i> SERVIZIO</a></li>
                 <li><a href="#fifth-section" class="hide"><i class="fas fa-envelope"></i> CONTATTI</a></li>
             </ul>
-            <a class="icon" onclick="toggleNavLinks()"><i class="fas fa-bars"></i></a>
+            <div class="contact-icons-home">
+                <a href="https://www.instagram.com/smeralco.lp/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/393271053744" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:smeralco@hotmail.com" target="_blank"> <i class="far fa-envelope"></i> </a>
+                </div>
         </nav>
+        <a class="icon d-lg-none" onclick="toggleNavLinks()"><i class="fas fa-bars"></i></a>
     </header>
     
     <main>
         <section id="home" class="">
-            <video class="video-background" src="photos/video3.mp4" preload="auto" autoplay loop muted playsinline></video>
+            <div class="video-container">
+                    <!-- <h1>Lusso Y Prestigio</h1> -->
+                 <video class="video-background" src="photos/video7.mp4" preload="auto" autoplay loop muted playsinline></video>
+            </div>
+     
+            
             <div class="content">
                 
-                <p>
-                    "Offriamo ai nostri Clienti la Garanzia di <br>
-                    Smeraldi Colombiani <br>
-                    di Alta Qualità e Autenticità."
-                </p>
-                <span>Paula Uribe, CEO Smeralco L&P s.r.l</span>
+                <div class="small-device-content">
+                    
+                    <p class="additional-text">
+                     "Offriamo ai nostri Clienti la Garanzia di
+                      Smeraldi Colombiani
+                      di Alta Qualità e Autenticità."
+                    </p>
+                     <p class="name" >
+                        Paula Uribe, CEO Smeralco L&P S.r.l
+                    </p>
+                    <a class="transparent-button" href="#second-section">L'MINIERA</a>
+                  </div>
+                  
             </div>
+            
+            
         </section>
         
        
@@ -63,7 +88,12 @@
         </div>
 
 
-        <div id="extra-photos">
+       
+        
+      
+          
+        <section id="second-section" class="">
+             <div id="extra-photos">
           
             <p id="captions">I nostri Smeraldi Colombiani provengono principalmente dalla miniera <span style="font-family:'Cinzel'; font-style: normal;   ">“Magia Verde”</span> situata a Ubala, nell´area di Chivor, da Muzo, da Pita e Coscuez. <br>
                 Sono Autentici, Naturali e gestiti con Resposabilità sociale in tutte le nostre transizioni. Smeraldi Colombiani estratti che soddisfano i requisiti locali, fiscali ed ambientali.
@@ -83,10 +113,6 @@
             </figure>
         </div>
         </div>
-        
-      
-          
-        <section id="second-section" class="">
           
             <div class="wrapperVideo">
                 <div class="sec-info">
@@ -357,8 +383,11 @@ La nostra collezione ospita anche pietre di eccezionali dimensioni per coloro ch
                     <button><a href="mailto:smeralco@hotmail.com">Contattaci</a></button>
                 </div>
             </div>
+          
         </section>
+        
     </main>
+   
     <footer>
         <div class="contact-icons">
                         <!-- Instagram Icon -->
@@ -378,7 +407,6 @@ La nostra collezione ospita anche pietre di eccezionali dimensioni per coloro ch
       <p>© 2023 SMERAlCO. Tutti i diritti riservati.</p>
         
       </footer>
-
     <script src="main.js" async defer></script>
 </body>
 </html>

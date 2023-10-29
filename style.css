@@ -57,7 +57,7 @@ html {
 
 header {
 
-    height: 9vw;
+    height: 8.5vw;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -66,11 +66,11 @@ header {
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
 }
 
 h2 {
-  font-family:'Cinzel';
+  font-family:'Cinzel' !important;
 }
 
 
@@ -126,6 +126,8 @@ nav ul li {
 
 .topNav ul li a:hover i {
   color: white; 
+  text-decoration: none !important;
+  
 }
 
 nav a {
@@ -155,6 +157,7 @@ nav a {
     background-color: #00997A;
     box-shadow: 0px 15px 20px rgba(56, 97, 81, 0.4);
     transform: translateY(-2px);
+    text-decoration: none !important;
   }
 
 
@@ -163,63 +166,137 @@ nav a {
   }
 
 
-  #home{
-    height: 55vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
 
-  
+
+#home h1 {
+  font-family: 'Dancing Script', cursive;
 }
 
-
-.content {
-  background-color: rgba(128, 128, 128, 0.4);
-  height: auto;
-  width: auto;
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  flex-direction: column;
+#home{
+  height: 55vw;
+  overflow: hidden;
+  /* display: flex; */
   justify-content: center;
-  padding: 2%;
-  top: 15%;
-  display: none;
+  align-items: flex-end;
+
 
 }
 
-.content h1 {
-    font-size: 4rem;
-    font-family:'Orbitron', sans-serif;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), 0px 0px 2px rgba(255, 252, 252, 0.6);
-    
+
+
+.video-container {
+width: 100%;
+display: flex;
+justify-content: center;
 }
-
-.content p {
-    
-    font-family: 'Whisper', cursive;
-    font-size: 6rem;
-    color: #F9F192;
-    
-    /* 50% transparent gray */
-}
-
-
 .video-background {
-   
-    padding: 0;
-    
-    width: 100%;
-    object-fit: cover;
-    max-width: 75%;
-    margin-bottom: 6rem;
+  padding: 0;
+  /* width: 100%; */
+  object-fit: cover;
+  width: 75%;
+  margin-bottom: 6rem;
+  margin: auto;
+  position: absolute;
+  top: 6rem;
 }
+
+
+#home h1 {
+font-family: 'Dancing Script', cursive;
+}
+
+/* Center the content vertically and horizontally */
+.content {
+display: flex;
+/* flex-direction: column; */
+justify-content: flex-end;
+align-items: center;
+position: relative;
+top: 43%;
+/* height: 100vh; */
+z-index: 9999;
+width: 75%;
+margin: auto;
+}
+
+
+
+
+/* Style for the text and button */
+.small-device-content {
+text-align: center;
+;
+width: 60%;
+margin-top: 2%;
+}
+
+.small-device-content h2 {
+
+text-transform: uppercase;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.5px;
+color: #fff;
+}
+
+
+/* Style for the additional text */
+.small-device-content .additional-text {
+max-width: 100%;
+margin: auto;
+/* Adjust the font weight as needed */
+font-size: 20px; /* Adjust the font size as needed */
+line-height: 1.5; /* Adjust the line height as needed */
+text-align: center;
+color: #fffffff1;
+background: rgba(255, 255, 255, 0.135);
+padding: 10px 30px;
+margin-bottom: 30px;
+border-radius: 50px;
+margin-bottom: 20px;
+font-style: italic;
+margin-top: 25px; /* Add some spacing between the paragraphs */
+}
+
+.name {
+
+color: white;
+font-size: 18px;
+}
+/* Style for the button */
+.small-device-content a.transparent-button {
+font-family: "Raleway", sans-serif;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.5px;
+display: inline-block;
+padding: 7px 28px;
+/* margin-top: 50px; */
+transition: 0.5s;
+border: 3px solid #00997A;
+color: rgb(255, 255, 255);
+
+background: #00997a4a;
+text-decoration: none; /* Remove underlines from links */
+}
+
+/* Add hover effect for the button */
+.small-device-content a.transparent-button:hover {
+
+  background: #00997A;
+color: #ffffff;
+}
+
+/* Change button color when clicked */
+.small-device-content a.transparent-button:active {
+background-color: #00997A;
+color: #fff;
+}
+
+
+
+
 
 
  
@@ -250,42 +327,54 @@ nav a {
 
 #extra-photos .images {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  min-width: 100%;
 }
+
+#second-section img {
+  max-width: 90%;
+  height: auto;
+  }
 #captions {
   width: 100%;
   text-align: justify;
   font-size: 1.3rem;
   padding: 8px 4px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
   font-style: italic ;
   margin-bottom: 2.4rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  
 }
 
 .image-container {
-  width: 30%;
+  min-width: 33.3%;
   height: auto;
   background-color: white; 
   
 }
-
+/* 
 .image-container img {
-  height: 350px;
+  height: auto;
   width: 100%;
 }
-
+ */
 
 
 #second-section{
     
     height: 100%;
-    padding-top: 4rem;
-    
-    
-    
+    padding-top: 4.3rem;   
 }
+
+
+
+  #second-section #mobilePhoto {
+    max-width: 70%;
+    height: auto;
+    }
+    
+  
 
 
 .wrapperVideo {
@@ -301,7 +390,7 @@ nav a {
     padding-top: 4rem;
     width: 80%;
     margin: auto;
-    
+    align-items: center;
     
 }
 
@@ -348,20 +437,24 @@ nav a {
 .wrapperPhoto {
     padding-top: 2rem ;
     max-width: 100%;
+  
+    
 
 }
 .mobilePhoto {
   display: none;
 }
 .imageHoldingEmerald {
-max-width: 45%;
+max-width: 30%;
+margin-top: 1rem;
 display: flex;
 justify-content: center;
+
 }
 
-#second-section img {
-max-width: 70%;
-height: auto;
+.pcPhoto {
+ width: 100%;
+ height: auto;
 }
 
 
@@ -836,6 +929,9 @@ table {
   overflow: hidden;
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  
 }
 
@@ -853,7 +949,7 @@ table {
   /* width: 45%; */
   height: 100%;
   height: auto;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
   margin-left: 10%
   
 }
@@ -937,7 +1033,7 @@ footer {
   background-color: black;
   color: whitesmoke;
   text-align: center;
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif !important;
    text-transform: uppercase;
    font-style: italic;
    font-size: 0.9rem;
@@ -965,29 +1061,180 @@ footer {
 
 
 
+.contact-icons-home {
+  display: none;
+}
 
 
 
 
 
 /*Adding media querys so the website is responsive*/
+@media (max-width: 500px) {
+  #nav {
+    top: 5% !important;
+  }
+
+
+
+
+}
+
+
+
 
 
 
 /* Small devices (phones, 576px and up) */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
  html {
     font-size: 13px;
     
   }
   header {
-    height: 24vw;
+    height: 15vw;
+    display: flex !important;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    
+  
   }
 
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    top: auto;
+    /* height: 100vh; */
+    position: relative;
+    
+  }
+  
 
+/* Style for the text and button */
+.small-device-content {
+  text-align: center;
+  width: 90%;
+  margin: 0;
+}
+
+.small-device-content h2 {
+ 
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+
+/* Style for the additional text */
+.small-device-content .additional-text {
+  max-width: 99%;
+ /* Adjust the font weight as needed */
+  font-size: 20px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height as needed */
+  text-align: center;
+  color: #fffffff1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-style: italic;
+  margin-top: 25px; /* Add some spacing between the paragraphs */
+}
+
+.name {
+ 
+  color: white;
+  font-size: 18px;
+}
+/* Style for the button */
+.small-device-content a.transparent-button {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 10px 28px;
+  margin-top: 50px;
+  transition: 0.5s;
+  border: 2px solid #00997A;
+  color: #00997A;
+  text-decoration: none; /* Remove underlines from links */
+}
+
+/* Add hover effect for the button */
+.small-device-content a.transparent-button:hover {
+  background-color: #00997A;
+  color: #000;
+}
+
+/* Change button color when clicked */
+.small-device-content a.transparent-button:active {
+  background-color: #00997A;
+  color: #fff;
+}
+
+
+
+
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.video-background {
+   
+    padding: 0;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    max-width: 75%;
+    margin-bottom: 6rem;
+}
+
+
+.contact-icons-home {
+  display: flex;
+  width: 55%;
+  margin: auto;
+
+  justify-content: space-around;
+}
+
+.contact-icons-home a {
+
+  color: #00997A;
+  
+}
+.contact-icons-home i {
+  font-size: 2rem;
+}
+
+
+  .d-lg-none,
+  .d-lg-none:visited, 
+  .d-lg-none:active, 
+  .d-lg-none:focus {
+    font-size: 1.9rem;
+    padding: 0px 10px;
+    color: #00997A;
+    text-decoration: none;  /* To remove underline if any */
+    outline: none;  /* To remove browser-applied outlines */
+  }
   
   header img {
-max-height: 45%;
+    min-width: 100%;
+max-height: auto;
+
   }
  
 header ul {
@@ -995,8 +1242,33 @@ header ul {
 }
   nav ul li {
   
-    width: 19%;
+    width: 80%;
+   
+    margin-bottom: 10px;
   }  
+
+  .topNav {
+    display: none; 
+    /* Hides the navigation on small screens until the toggle button is pressed */
+}
+  #nav {
+    display: none;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 10%;
+    padding-top: 20px !important;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.918); /* You can change the color */
+    z-index: 1000; /* To ensure it's above other elements */
+}
+#nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+}
   
   nav a {
     width: 100%;
@@ -1019,6 +1291,7 @@ header ul {
     align-items: center;
     text-align: center;
     font-size: 0.8rem;
+    
     }
 
   
@@ -1029,7 +1302,7 @@ header ul {
 
 
 section {
-  min-height: 130vw ;
+  min-height: 100vh !important ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1041,53 +1314,65 @@ section {
     align-items: center;
     padding: 0;
     min-height: 80vw ;
+    background-color: #000000;
   }
   
   #home video {
     max-width: 100%;
-    margin-bottom: 0;
+    
     padding-bottom: 0;
     
   }
-  .content h1 {
-    font-size: 2.2rem;
-  }
-  .content p {
-    font-size: 3rem;
-  }
+
 
   .wrapperVideo , .wrapperPhoto {
    flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 
  
   #empty {
     height: 40vw;
-    background-attachment: scroll;
+    background-attachment: fixed;
    
   }
 
  
+
+  #captions {
+    width: 85%;
+  }
+
+
 #extra-photos {
   flex-direction: column;
   align-items: center;
-  width: 80%;
- 
+  justify-content: center;
+  min-width: 100%;
+
 }
+
+
  
 #extra-photos .images {
   flex-direction: column;
+ 
+  justify-content: center;
+  align-items: center;
 }
   
 #extra-photos figure {
  
-  width: 90%;
+  width: 100%;
   
 } 
 
+.image-container {
+  display: flex;
+  justify-content: center;
+}
 .image-container img {
   height: auto;
   width: 100%;
@@ -1119,7 +1404,7 @@ section {
     }
     
     .sec-info p {
-      font-size: 1.3rem;
+      font-size: 1.7rem;
     
     }
     
@@ -1142,6 +1427,7 @@ section {
   .mobilePhoto {
     display: block;
     margin: 0.5rem;
+    order: 3;
   }
 
 
@@ -1153,7 +1439,36 @@ section {
    
     }
     
-    
+  /* Container holding the video */
+.video-container {
+  position: relative;
+  /* The rest of your styles */
+}
+
+/* Top gradient */
+.video-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20%;  /* the gradient will span from the top to 20% of the container's height */
+  background: linear-gradient(to bottom, black, transparent);
+  pointer-events: none;  /* to ensure it doesn't interfere with click events */
+}
+
+/* Bottom gradient */
+.video-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%;  /* the gradient will span from the bottom to 20% from the bottom */
+  background: linear-gradient(to top, black, transparent);
+  pointer-events: none;  /* to ensure it doesn't interfere with click events */
+}
+
 
   .wrapper-third-section .sec-info {
   
@@ -1240,6 +1555,12 @@ display: none;
   height: auto;
 }
 
+.wrapper-fifth-section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 
 .wrapper-fifth-section .sec-info {
   
@@ -1248,9 +1569,17 @@ display: none;
 }
 
 .barcode img {
-  width: 80%;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0rem;
+}
+#fifth-section {
+  min-height: 90vh !important;
 }
 
+section#third-section {
+  min-height: 80vh !important;
+}
 }
 
 

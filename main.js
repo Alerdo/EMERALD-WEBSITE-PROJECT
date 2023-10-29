@@ -42,20 +42,38 @@ window.addEventListener('scroll', () => {
 
 
 
-  //Using JavaScript to make the navigation-bar smaller 
-  function toggleNavLinks() {
-    const navLinks = document.querySelector('.topNav ul');
-    navLinks.classList.toggle('show'); // Toggle the show class on click
+// Toggle function
+function toggleNavLinks() {
+  var nav = document.getElementById('nav');
+  if (nav.style.display === 'none' || nav.style.display === '') {
+      nav.style.display = 'block';
+  } else {
+      nav.style.display = 'none';
   }
+}
+// Event listener to close navbar when clicking outside
+document.addEventListener('click', function(event) {
+  if (window.innerWidth <= 700) {
+      var nav = document.getElementById('nav');
+      var toggleButton = document.querySelector('.icon');
 
-   const showNavBar =() => {
-    var x = document.getElementById("nav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+      if (!nav.contains(event.target) && !toggleButton.contains(event.target)) {
+          nav.style.display = 'none';
+      }
   }
+});
+
+// Event listener to close navbar when clicking on a link
+var navLinks = document.querySelectorAll('#nav a');
+
+navLinks.forEach(function(link) {
+  link.addEventListener('click', function() {
+      if (window.innerWidth <= 700) {
+          var nav = document.getElementById('nav');
+          nav.style.display = 'none';
+      }
+  });
+});
 
 
    // JavaScript for initializing the Slick Carousel
